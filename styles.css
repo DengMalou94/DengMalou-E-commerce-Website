@@ -1,13 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
     
 body{
     font-family:'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
     
     
@@ -196,7 +195,7 @@ h2::after{
 
     /* Starting of Customers feedback sections */
 .feedbacks {
-    padding: 100px ;
+    padding: 10px ;
     background-color: #ffffff;
 }    
 .feedbacks .col-3 {
@@ -223,7 +222,7 @@ h2::after{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
     
 }
 .col-3 img {
@@ -281,7 +280,7 @@ h2::after{
 
 hr{
     border: none;
-    background-color: #fffdfd;
+    background-color:  #f0680d;
     height: 1px;
     margin: 20px 0;
 }
@@ -293,8 +292,8 @@ hr{
 /* Footer Section */
 
 .footer {
-    background-color: #3c3228;
-    color: #fff;
+    background-color: #fcd8b287;
+    color: #e26a1b;
     padding: 60px 0 20px;
 }
 .footer-col-1 h3,
@@ -353,6 +352,13 @@ hr{
     width: 180px;
     margin-bottom: 20px;
      }
+.footer-col-1 img {
+    width: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
     
 .footer a {
     color: #fff;
@@ -367,58 +373,138 @@ hr{
     padding: 5px;
     font-size: larger;
 }
-.footer-image{
+.footer-image p{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color:  #f0680d;
+}
+.footer-image {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    padding: 10px;
+    cursor: pointer;
+    height: auto;
+    gap: 20px;
 }
+.footer-image a {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #db6b21;; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(229, 114, 6, 0.632); 
+}
+.footer-image a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(249, 111, 19, 0.2); 
+}
+
+.footer-image a i {
+    font-size: 24px; /* Icon size */
+    color: #db6b21;; /* Icon color */
+}
+.footer-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text and images */
+}
+
+.footer-col-1 img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px; /* Reduces the gap between images */
+}
+
+
+
+hr{
+    color: #f0680d;
+}
+p{
+    color:#f0680d;
+}
+
+
 
 /* Media query for menu */
-@media only screen and(max-width:800px)   {
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        text-align: center;
+        
     }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
 
-    }
-    nav ul li a{
-        color: #fff;
-}
-    /* Footer Section */
-
-@media only screen and(max-width:600px)   {
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-    }
-    nav ul li{
-        display: absolute;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
- 
-    .menu-bar{
-        display: block;
+    .menu-bar {
+        display: inline-block;
         cursor: pointer;
+        text-align: center;
     }
-   
+
+    .header .Slogan {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offer .row {
+        flex-direction: column;
+    }
+
+    .footer .row {
+        flex-direction: column;
+    }
+
+    .feedbacks .row {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
 }
+@media (max-width: 600px) {
+    .navbar ul {
+        display: none;
+        
+    }
+
+    .menu-bar {
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .header .Slogan {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offer .row {
+        flex-direction: column;
+    }
+
+    .footer .row {
+        flex-direction: column;
+    }
+
+    .feedbacks .row {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
 
 }
-/* End of Footer section */  
+
+
     
