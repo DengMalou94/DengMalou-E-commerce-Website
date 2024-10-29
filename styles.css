@@ -261,7 +261,7 @@ h2::after{
     background-color: #ffffff;
  } 
  .col-4{
-    width: 160px;
+    width: 200px;
  }   
 .col-4 img {
     max-width: 100%;
@@ -452,12 +452,11 @@ nav ul {
         min-width: 370px;
     }
 
-    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer {
+    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer, .brands .row {
         flex-direction: column;
     }
 
     .footer-col-1, .footer-col-2, .footer-col-3{
-      
         flex-direction: column;
     }
 }
@@ -471,6 +470,13 @@ nav ul {
         padding: 20px 20;
         margin-top: 25px;
         right: 0;
+    }
+    .Slogan-content h1{
+        font-size: 50px;
+        line-height: 70px;
+        margin: 20px 0;
+        
+      
     }
 
 
@@ -494,7 +500,7 @@ nav ul {
         flex-basis: 25%;
     }
 
-    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer {
+    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer, .brands .row {
         flex-direction: column;
     }
 
@@ -535,10 +541,15 @@ nav ul {
     }
    .Slogan-content{
     margin-top: 80px;
+    
    }
- 
-    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer {
+   .col-1{
+    min-width:auto;
+    flex-basis: 25%;
+}
+    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer, .brands .row{
         flex-direction: column;
+    
     }
 
     .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
@@ -565,9 +576,9 @@ nav ul {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+    }
 
-    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer {
+    .header .Slogan, .offer .row, .feedbacks .row, .footer .row, .footer, .brands .row {
         flex-direction: row;
         flex: 1;
     }
